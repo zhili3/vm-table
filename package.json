@@ -1,15 +1,26 @@
 {
-  "name": "xc-table",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vm-table",
+  "version": "1.0.0",
+  "description": "移动端表格组件",
+  "private": false,
+  "author": "qiufeng",
+  "license": "MIT",
+  "main": "lib/vm-table.common.js",
+  "keywords": [
+    "vue",
+    "table"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name vm-table --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "vue": "^2.6.14"
+    "vue": "^2.6.14",
+    "vue-router": "^3.4.3",
+    "mockjs": "^1.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -19,7 +30,9 @@
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
-    "vue-template-compiler": "^2.6.14"
+    "vue-template-compiler": "^2.6.14",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.1"
   },
   "eslintConfig": {
     "root": true,
@@ -33,7 +46,9 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "no-console": "off"
+    }
   },
   "browserslist": [
     "> 1%",
