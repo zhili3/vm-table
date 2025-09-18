@@ -1,8 +1,8 @@
     .DS_Store
     node_modules/
     examples/
-    packages/
     public/
+    src/
     vue.config.js
     babel.config.js
     *.map
